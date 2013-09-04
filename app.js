@@ -10,12 +10,10 @@ app.get('/location', function(req, res) {
 });
 
 app.post('/location', function(req, res) {
-    console.log(req.body);
     if (!req.body.location.lat || !req.body.location.lng) {
         return res.send(400);
     }
     currentLocation = req.body.location;
-    console.log(currentLocation);
     res.jsonp(currentLocation);
 });
 
