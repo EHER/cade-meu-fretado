@@ -1,0 +1,16 @@
+{
+  "name": "cade-meu-fretado",
+  "version": "0.0.1",
+  "description": "App para sabe a localização do fretado em tempo real.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Alexandre Eher <alexandre@eher.com.br>",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~3.3.8",
+    "memcached": "~0.2.5",
+    "bower": "~1.2.6"
+  }
+}
