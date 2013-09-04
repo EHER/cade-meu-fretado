@@ -1,6 +1,6 @@
 {
   "name": "cade-meu-fretado",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "app.js",
   "ignore": [
     "**/.*",
