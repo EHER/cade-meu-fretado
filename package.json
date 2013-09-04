@@ -4,13 +4,20 @@
   "description": "App para sabe a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node app.js"
   },
   "author": "Alexandre Eher <alexandre@eher.com.br>",
   "license": "BSD",
   "dependencies": {
-    "express": "~3.3.8",
-    "memcached": "~0.2.5",
-    "bower": "~1.2.6"
+    "express": "~3.3.8"
+  },
+  "devDependencies": {
+    "bower": "~1.2.6",
+    "jitsu": "~0.13.1"
+  },
+  "subdomain": "cade-meu-fretado",
+  "engines": {
+    "node": "0.10.x"
   }
 }
