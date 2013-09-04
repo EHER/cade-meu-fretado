@@ -1,9 +1,3 @@
-require.config({
-    paths: {
-        jquery: 'vendor/jquery/jquery.min'
-    }
-});
-
 function updateLocation () {
     require(["jquery"], function($) {
         navigator.geolocation.getCurrentPosition(function(location) {

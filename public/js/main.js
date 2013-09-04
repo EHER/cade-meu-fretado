@@ -1,9 +1,3 @@
-require.config({
-    paths: {
-        jquery: 'vendor/jquery/jquery.min'
-    }
-});
-
 function getUpdatedLocation () {
     require(["jquery"], function($) {
         $.get("/location", function (data) {
