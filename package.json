@@ -4,9 +4,8 @@
   "description": "App para sabe a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
     "start": "node app.js",
-    "postdeploy": "node bower_install.js"
+    "postdeploy": "bower install"
   },
   "author": "Alexandre Eher <alexandre@eher.com.br>",
   "license": "BSD",
