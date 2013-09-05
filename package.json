@@ -1,6 +1,6 @@
 {
   "name": "cade-meu-fretado",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "App para sabe a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
