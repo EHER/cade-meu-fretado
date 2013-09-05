@@ -1,11 +1,10 @@
 {
   "name": "cade-meu-fretado",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "App para sabe a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
-    "start": "node app.js"
+    "postdeploy": "node bower_install.js"
   },
   "author": "Alexandre Eher <alexandre@eher.com.br>",
   "license": "BSD",
@@ -22,9 +21,6 @@
     "grunt-release": "~0.5.1"
   },
   "subdomain": "cademeufretado",
-  "scripts" : {
-    "postdeploy": "node bower_install.js"
-  },
   "engines": {
     "node": "0.10.x"
   },
