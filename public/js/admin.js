@@ -5,15 +5,14 @@ function updateLocation () {
                 location: {
                     lat: location.coords.latitude, lng: location.coords.longitude
                 }
-            }, function (data) {
-                $.get("http://maps.googleapis.com/maps/api/geocode/json?latlng="+
-    data.lat+","+data.lng+"&sensor=false", function(data) {
-                    var address = "";
-                    if (data && data.status === "OK") {
-                        address = data.results[0].formatted_address;
-                    }
-                    document.getElementById("content").innerText = address;
-                });
+            }, function (body) {
+                $(".location").text(body.location.address);
+
+                var staticMapUrl = "http://maps.googleapis.com/maps/api/staticmap"
+                    + "?zoom=15&size=200x200&maptype=roadmap&sensor=false"
+                    + "&center=" + body.location.lat + "," + body.location.lng
+                    + "&markers=color:blue%7C" + body.location.lat + "," + body.location.lng;
+                $(".map").show().attr("src", staticMapUrl);
             });
         });
     });
