@@ -1,0 +1,33 @@
+{
+  "name": "cade-meu-fretado",
+  "version": "0.0.15",
+  "main": "app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Eher <alexandre@eher.com.br>"
+  ],
+  "description": "App para sabe a localização do fretado em tempo real.",
+  "license": "BSD",
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": "~2.0.3"
+  },
+  "_release": "0.0.15",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.15",
+    "commit": "69dc7d1b19245e82f64f13037b8bf97cf6fff270"
+  },
+  "_source": "/Users/alexandreeher/src/fretado",
+  "_target": "~0.0.15",
+  "_originalSource": "/Users/alexandreeher/src/fretado",
+  "_direct": true
+}
