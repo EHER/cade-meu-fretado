@@ -22,7 +22,9 @@
     "grunt-release": "~0.5.1"
   },
   "subdomain": "cademeufretado",
-  "postdeploy": "node bower_install.js",
+  "scripts" : {
+    "postdeploy": "node bower_install.js",
+  },
   "engines": {
     "node": "0.10.x"
   },
