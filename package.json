@@ -22,7 +22,7 @@
     "grunt-release": "~0.5.1"
   },
   "subdomain": "cademeufretado",
-  "predeploy": "bower install",
+  "postdeploy": "bower install",
   "engines": {
     "node": "0.10.x"
   },
