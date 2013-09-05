@@ -1,6 +1,6 @@
 {
   "name": "cade-meu-fretado",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "App para sabe a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
@@ -15,7 +15,9 @@
   },
   "devDependencies": {
     "jitsu": "~0.13.1",
-    "versionify": "~1.0.1"
+    "versionify": "~1.0.1",
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.5.1"
   },
   "subdomain": "cademeufretado",
   "prepublish": "bower install",
