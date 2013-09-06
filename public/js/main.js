@@ -4,10 +4,10 @@ function getUpdatedLocation () {
             $(".location").text(body.location.address);
 
             var staticMapUrl = "http://maps.googleapis.com/maps/api/staticmap"
-                + "?zoom=15&size=200x200&maptype=roadmap&sensor=false"
+                + "?zoom=15&size=300x200&maptype=roadmap&sensor=false"
                 + "&center=" + body.location.lat + "," + body.location.lng
                 + "&markers=color:blue%7C" + body.location.lat + "," + body.location.lng;
-            $(".map").show().attr("src", staticMapUrl);
+            $(".map img").show().attr("src", staticMapUrl);
         });
     });
 };

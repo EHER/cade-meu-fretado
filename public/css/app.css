@@ -1,0 +1,13 @@
+body > section > article > .home {
+    display:block;
+    width:80%;
+    margin:0 auto;
+    padding-top:15%;
+    text-align:center;
+}
+
+body > section > article .home .map > img {
+    border:1px #000;
+    width:100%;
+}
+
