@@ -14,3 +14,17 @@ function getUpdatedLocation () {
 
 getUpdatedLocation();
 window.setInterval(getUpdatedLocation, 30000);
+
+Lungo.init({
+    name: 'Cadê Meu Fretado',
+    history: false
+});
+var pull = new Lungo.Element.Pull('#main-article', {
+    onPull: "Pull down to refresh",
+    onRelease: "Release to get new data",
+    onRefresh: "Refreshing...",
+    callback: function() {
+        getUpdatedLocation();
+        pull.hide();
+    }
+});

@@ -20,3 +20,17 @@ function updateLocation () {
 
 updateLocation();
 window.setInterval(updateLocation, 30000);
+
+Lungo.init({
+    name: 'Cadê Meu Fretado - Admin',
+    history: false
+});
+var pull = new Lungo.Element.Pull('#main-article', {
+    onPull: "Pull down to refresh",
+    onRelease: "Release to get new data",
+    onRefresh: "Refreshing...",
+    callback: function() {
+        updateLocation();
+        pull.hide();
+    }
+});
