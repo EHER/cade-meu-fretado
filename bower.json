@@ -20,6 +20,7 @@
     "requirejs": "~2.1.8",
     "quojs": "~2.3.6",
     "lungo": "~2.2.1",
+    "leaflet-dist": "~0.6.4",
     "jquery": "~2.0.3"
   }
 }

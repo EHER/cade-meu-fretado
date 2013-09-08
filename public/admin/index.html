@@ -48,8 +48,21 @@
         <link rel="stylesheet" href="../js/vendor/lungo/lungo.css">
         <link rel="stylesheet" href="../js/vendor/lungo/lungo.theme.css">
         <link rel="stylesheet" href="../js/vendor/lungo/lungo.icon.css">
+
         <!-- App Stylesheet -->
         <link rel="stylesheet" href="../css/app.css">
+
+        <!-- Leaflet Stylesheet -->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+        <![endif]-->
+
+        <script src="../js/vendor/quojs/quo.js"></script>
+        <script src="../js/vendor/lungo/lungo.js"></script>
+        <script src="../js/vendor/leaflet-dist/leaflet.js"></script>
+        <script src="../js/config.js"></script>
+        <script data-main="../js/admin" src="../js/vendor/requirejs/require.js"></script>
     </head>
 
     <body>
@@ -57,7 +70,7 @@
             <header>
                 <h1 class="title centered">Cadê Meu Fretado - Admin</h1>
             </header>
-            <article id="main-article" class="list indenteds scroll">
+            <article id="home" class="active list indenteds scroll">
                 <div class="home">
                     <ul>
                         <li class="map">
@@ -67,11 +80,13 @@
                     </ul>
                 </div>
             </article>
+            <article id="map"></article>
+            <footer>
+                <nav>
+                    <a href="#" data-view-article="home" data-icon="map-marker" class="active"></a>
+                    <a href="#" data-view-article="map" data-icon="globe"></a>
+                </nav>
+            </footer>
         </section>
-
-        <script src="../js/vendor/quojs/quo.js"></script>
-        <script src="../js/vendor/lungo/lungo.js"></script>
-        <script src="../js/config.js"></script>
-        <script data-main="../js/admin" src="../js/vendor/requirejs/require.js"></script>
     </body>
 </html>

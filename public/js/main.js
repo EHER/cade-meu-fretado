@@ -1,30 +1,28 @@
-function getUpdatedLocation () {
-    require(["jquery"], function($) {
-        $.get("/location", function (body) {
-            $(".location").text(body.location.address);
-
-            var staticMapUrl = "http://maps.googleapis.com/maps/api/staticmap"
-                + "?zoom=15&size=300x200&maptype=roadmap&sensor=false"
-                + "&center=" + body.location.lat + "," + body.location.lng
-                + "&markers=color:blue%7C" + body.location.lat + "," + body.location.lng;
-            $(".map img").show().attr("src", staticMapUrl);
-        });
-    });
-};
-
-getUpdatedLocation();
-window.setInterval(getUpdatedLocation, 30000);
-
 Lungo.init({
     name: 'Cadê Meu Fretado',
     history: false
 });
-var pull = new Lungo.Element.Pull('#main-article', {
+var pull = new Lungo.Element.Pull('#home', {
     onPull: "Pull down to refresh",
     onRelease: "Release to get new data",
     onRefresh: "Refreshing...",
     callback: function() {
-        getUpdatedLocation();
+        require(['refreshLocation'], function(refresh) {
+            refresh();
+        });
         pull.hide();
     }
 });
+
+Lungo.dom('#map').on('load', function(event){
+    require(['refreshMap'], function (refresh) {
+        refresh();
+        window.setInterval(refresh, 30000);
+    });
+});
+
+require(['refreshLocation'], function(refresh) {
+    refresh();
+    window.setInterval(refresh, 30000);
+});
+
