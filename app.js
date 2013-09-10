@@ -3,7 +3,7 @@ var app = express();
 var request = require('request');
 var currentLocation = {lat:0, lng:0, address:''};
 
-app.use(express.static('public'))
+app.use(express.static('www'))
 app.use(express.bodyParser());
 
 app.get('/location', function(req, res) {
