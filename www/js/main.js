@@ -2,6 +2,7 @@ Lungo.init({
     name: 'Cadê Meu Fretado',
     history: false
 });
+
 var pull = new Lungo.Element.Pull('#home', {
     onPull: "Pull down to refresh",
     onRelease: "Release to get new data",
@@ -25,4 +26,3 @@ require(['refreshLocation'], function(refresh) {
     refresh();
     window.setInterval(refresh, 30000);
 });
-
