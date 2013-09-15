@@ -1,7 +1,8 @@
+var package = require('./package.json');
 var express = require('express');
 var app = express();
 var request = require('request');
-var currentLocation = {lat:0, lng:0, address:''};
+var currentLocation = {lat:0, lng:0, address:'', lastUpdate: new Date()};
 
 app.use(express.static('www'))
 app.use(express.bodyParser());
@@ -17,7 +18,8 @@ app.post('/location', function(req, res) {
 
     currentLocation = {
         lat: req.body.location.lat,
-        lng: req.body.location.lng
+        lng: req.body.location.lng,
+        lastUpdate: new Date()
     }
 
     var revgeoUrl = "http://maps.googleapis.com/maps/api/geocode/json?latlng="
@@ -33,6 +35,10 @@ app.post('/location', function(req, res) {
 
         res.jsonp({location: currentLocation});
     });
+});
+
+app.get('/version', function(req, res) {
+    res.jsonp({version: package.version});
 });
 
 app.listen(3000);

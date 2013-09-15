@@ -26,3 +26,7 @@ require(['refreshLocation'], function(refresh) {
     refresh();
     window.setInterval(refresh, 30000);
 });
+
+require(['jquery.timeago.pt-br'], function () {
+    $(".timeago").timeago();
+});
