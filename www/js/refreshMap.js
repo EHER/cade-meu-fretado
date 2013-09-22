@@ -4,8 +4,9 @@ define(['locationService', 'map'], function (locationService, map) {
     });
 
     return function() {
+        map.displayUserLocation();
         locationService.get(function(location) {
-            map.setLocation(location);
+            map.setBusLocation(location);
         });
     };
 });
