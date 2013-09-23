@@ -1,8 +1,9 @@
-define(['leaflet'], function (L) {
+define(['leaflet', 'stops'], function (L, stops) {
     return {
         map: L.map('map'),
         busMarker: L.marker(),
         userMarker: L.circle(),
+        busStops: L.geoJson(),
         init: function(location) {
             this.map.setView(location, 16);
 
@@ -12,6 +13,8 @@ define(['leaflet'], function (L) {
             }).addTo(this.map);
 
             this.busMarker.setLatLng(location).addTo(this.map);
+
+            this.displayBusStops();
         },
         setBusLocation: function(location) {
             this.map.panTo(location);
@@ -20,7 +23,6 @@ define(['leaflet'], function (L) {
         displayUserLocation: function() {
             var map = this.map,
                 userMarker = this.userMarker;
-
 
             this.map.on('locationfound', function (found) {
                 var location = {
@@ -31,7 +33,11 @@ define(['leaflet'], function (L) {
                 var radius = found.accuracy / 2;
                 userMarker.setLatLng(location).setRadius(radius).addTo(map);
             });
+
             this.map.locate();
+        },
+        displayBusStops: function() {
+            this.busStops.addData(stops).addTo(this.map);
         }
     }
 });
