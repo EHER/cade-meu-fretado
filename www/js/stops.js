@@ -5,7 +5,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [-47.4788, -23.44522]
+                coordinates: [-47.47977, -23.46190]
             },
             properties: {
                 id: 1,
