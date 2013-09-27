@@ -5,7 +5,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.4788, -23.44522]
             },
             properties: {
                 id: 1,
@@ -19,7 +19,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.473912, -23.483283]
             },
             properties: {
                 id: 2,
@@ -33,7 +33,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.47989, -23.48490]
             },
             properties: {
                 id: 3,
@@ -47,7 +47,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.47236, -23.49098]
             },
             properties: {
                 id: 4,
@@ -61,7 +61,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.46733, -23.49710]
             },
             properties: {
                 id: 5,
@@ -75,12 +75,12 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.46823, -23.50324]
             },
             properties: {
                 id: 6,
-                name: "",
-                address: "Praça 9 de Julho",
+                name: "Praça 9 de Julho",
+                address: "",
                 time: "5:12",
                 direction: "Ida"
             }
@@ -89,7 +89,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.47937, -23.50472]
             },
             properties: {
                 id: 7,
@@ -103,7 +103,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.4909, -23.5233]
             },
             properties: {
                 id: 8,
@@ -117,7 +117,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.46534, -23.53339]
             },
             properties: {
                 id: 9,
@@ -131,7 +131,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.46478, -23.52353]
             },
             properties: {
                 id: 10,
@@ -187,25 +187,11 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [-47.43807, -23.48570]
+                coordinates: [-47.44279, -23.49127]
             },
             properties: {
                 id: 14,
-                name: "Chamonix",
-                address: "Marg. Dom Aguirre",
-                time: "",
-                direction: "Ida"
-            }
-        },
-        {
-            type: "Feature",
-            geometry: {
-                type: "Point",
-                coordinates: [0, 0]
-            },
-            properties: {
-                id: 15,
-                name: "Ponte pinga-pinga",
+                name: "Extra",
                 address: "Marg. Dom Aguirre",
                 time: "5:38",
                 direction: "Ida"
@@ -215,7 +201,21 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.43807, -23.48570]
+            },
+            properties: {
+                id: 15,
+                name: "Chamonix",
+                address: "Marg. Dom Aguirre",
+                time: "5:40",
+                direction: "Ida"
+            }
+        },
+        {
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: [-47.44521, -23.47520]
             },
             properties: {
                 id: 16,
@@ -229,7 +229,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.44444, -23.47281]
             },
             properties: {
                 id: 17,
@@ -243,7 +243,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.44289, -23.47685]
             },
             properties: {
                 id: 18,
@@ -257,7 +257,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-47.42968, -23.47289]
             },
             properties: {
                 id: 19,
@@ -271,7 +271,7 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-46.70499, -23.56546]
             },
             properties: {
                 id: 20,
@@ -285,10 +285,24 @@ define({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [0, 0]
+                coordinates: [-46.69236, -23.58703]
             },
             properties: {
                 id: 21,
+                name: "Ponte Cidade Jardim",
+                address: "Marginal Pinheiros",
+                time: "7:00",
+                direction: "Ida"
+            }
+        },
+        {
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: [-46.69130, -23.60054]
+            },
+            properties: {
+                id: 22,
                 name: "1° Bolsão da Berrini",
                 address: "Av. Eng. Luis Carlos Berrini",
                 time: "7:10",
@@ -302,7 +316,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 22,
+                id: 23,
                 name: "2° Bolsão da Berrini",
                 address: "Av. Eng. Luis Carlos Berrini",
                 time: "7:13",
@@ -316,7 +330,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 23,
+                id: 24,
                 name: "",
                 address: "Rua Chafic Maluf",
                 time: "7:17",
@@ -330,7 +344,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 24,
+                id: 25,
                 name: "Amaro Guerra x Américo Brasiliense",
                 address: "Rua Amaro Guerra",
                 time: "7:20",
@@ -344,7 +358,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 25,
+                id: 26,
                 name: "",
                 address: "Verbo Divino",
                 time: "7:22",
@@ -358,7 +372,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 26,
+                id: 27,
                 name: "",
                 address: "Bragança Paulista",
                 time: "7:27",
@@ -372,7 +386,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 27,
+                id: 28,
                 name: "Africa do Sul x João Dias",
                 address: "Rua Africa do Sul",
                 time: "7:35",
@@ -386,7 +400,7 @@ define({
                 coordinates: [0, 0]
             },
             properties: {
-                id: 28,
+                id: 29,
                 name: "CENESP",
                 address: "",
                 time: "7:40",
