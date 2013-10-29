@@ -47,14 +47,17 @@ define(['leaflet', 'stops'], function (L, stops) {
                 .addTo(this.map);
 
             this.displayBusStops();
+
+            this.map.panTo(location);
         },
         setBusLocation: function (location) {
-            this.map.panTo(location);
             this.busMarker.setLatLng(location).bindPopup(location.address);
+            this.fitBoundsToUserAndBus();
         },
         displayUserLocation: function() {
             var map = this.map,
-                userMarker = this.userMarker;
+                userMarker = this.userMarker,
+                context = this;
 
             this.map.on('locationfound', function (found) {
                 var location = {
@@ -63,9 +66,13 @@ define(['leaflet', 'stops'], function (L, stops) {
                 };
 
                 userMarker.setIcon(icons.user).setLatLng(location).addTo(map);
+                context.fitBoundsToUserAndBus();
             });
 
             this.map.locate();
+        },
+        fitBoundsToUserAndBus: function() {
+            this.map.fitBounds([this.busMarker.getLatLng(), this.userMarker.getLatLng()]);
         },
         displayBusStops: function() {
             L.geoJson(stops, {
