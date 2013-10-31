@@ -18,7 +18,8 @@
     "jitsu": "~0.13.1",
     "versionify": "~1.0.1",
     "grunt": "~0.4.1",
-    "grunt-release": "~0.5.1"
+    "grunt-release": "~0.5.1",
+    "grunt-manifest": "~0.4.0"
   },
   "subdomain": "cademeufretado",
   "engines": {
