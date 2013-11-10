@@ -41,6 +41,6 @@ app.get('/version', function(req, res) {
     res.jsonp({version: package.version});
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log("Running...");
 
