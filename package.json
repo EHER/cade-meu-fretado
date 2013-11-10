@@ -1,6 +1,6 @@
 {
   "name": "cade-o-fretado",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "App para sabe a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
@@ -23,8 +23,8 @@
   },
   "subdomain": "cademeufretado",
   "domains": [
-      "cadeofretado.com.br",
-      "www.cadeofretado.com.br"
+    "cadeofretado.com.br",
+    "www.cadeofretado.com.br"
   ],
   "engines": {
     "node": "0.10.x"
