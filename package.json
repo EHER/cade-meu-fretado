@@ -21,6 +21,10 @@
     "grunt-release": "~0.5.1"
   },
   "subdomain": "cademeufretado",
+  "domains": [
+      "cadeofretado.com.br",
+      "www.cadeofretado.com.br"
+  ],
   "engines": {
     "node": "0.10.x"
   },
