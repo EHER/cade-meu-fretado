@@ -26,7 +26,7 @@ app.post('/location', function(req, res) {
     var revgeoUrl = "http://maps.googleapis.com/maps/api/geocode/json?latlng="
             + req.body.location.lat + "," + req.body.location.lng + "&sensor=false";
 
-    request(revgeoUrl, function (err, res, body) {
+    request(revgeoUrl, function (err, response, body) {
         if (err) {
             console.warn(err.message);
         }
@@ -34,7 +34,7 @@ app.post('/location', function(req, res) {
         var data = JSON.parse(body);
 
         if (data && data.status === "OK") {
-            currentLocation.address = data.res[0].formatted_address;
+            currentLocation.address = data.response[0].formatted_address;
         }
 
         res.jsonp({location: currentLocation});
