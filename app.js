@@ -46,5 +46,6 @@ app.get('/version', function(req, res) {
 });
 
 app.listen(port);
+console.log("Version " + packageJson.version);
 console.log("Listen on port " + port);
 
