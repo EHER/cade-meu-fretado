@@ -14,8 +14,8 @@ module.exports = function(grunt) {
                     "*/*.html",
                     "js/*.js",
                     "css/*.css",
-                    "js/vendor/*/*.js",
-                    "js/vendor/*/*.css",
+                    "vendor/*/*.js",
+                    "vendor/*/*.css",
                     "images/*.png"
                 ],
                 dest: "app/cache.manifest"
