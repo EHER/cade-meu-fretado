@@ -1,7 +1,7 @@
 {
   "name": "cade-o-fretado",
   "version": "0.0.32",
-  "description": "App para sabe a localização do fretado em tempo real.",
+  "description": "App para saber a localização do fretado em tempo real.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -9,13 +9,11 @@
   "author": "Alexandre Eher <alexandre@eher.com.br>",
   "license": "BSD",
   "dependencies": {
-    "bower": "~1.2.6",
     "express": "~3.3.8",
     "node-curl": "~0.3.1",
     "request": "~2.27.0"
   },
   "devDependencies": {
-    "jitsu": "~0.13.1",
     "versionify": "~1.0.1",
     "grunt": "~0.4.1",
     "grunt-release": "~0.5.1",

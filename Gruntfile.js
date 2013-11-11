@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                     preferOnline: false,
                     timestamp: true,
                     hash: true,
-                    basePath: 'www'
+                    basePath: 'app'
                 },
                 src: [
                     "*.html",
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     "js/vendor/*/*.css",
                     "images/*.png"
                 ],
-                dest: "www/cache.manifest"
+                dest: "app/cache.manifest"
             }
         },
         release: {

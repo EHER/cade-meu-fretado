@@ -1,6 +1,6 @@
 {
-  "name": "cade-meu-fretado",
-  "version": "0.0.3",
+  "name": "cade-o-fretado",
+  "version": "0.0.4",
   "main": "app.js",
   "ignore": [
     "**/.*",
@@ -13,7 +13,6 @@
   "authors": [
     "Eher <alexandre@eher.com.br>"
   ],
-  "description": "App para sabe a localização do fretado em tempo real.",
   "license": "BSD",
   "private": true,
   "dependencies": {
