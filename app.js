@@ -31,10 +31,10 @@ app.post('/location', function(req, res) {
             console.warn(err.message);
         }
 
-        var data = JSON.parse(body);
+        var jsonResponse = JSON.parse(body);
 
-        if (data && data.status === "OK") {
-            currentLocation.address = data.response[0].formatted_address;
+        if (jsonResponse && jsonResponse.status === "OK") {
+            currentLocation.address = jsonResponse.results[0].formatted_address;
         }
 
         res.jsonp({location: currentLocation});
